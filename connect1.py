@@ -6,11 +6,11 @@ try:
 	r = s.recv(1024)
 	print r
 
-	s.send("USER oiiiiii\r\n")
+	s.send("USER usuario\r\n")
 	r = s.recv(1024)
 	print r
 
-	s.send("PASS tchauuuu\r\n")
+	s.send("PASS senha\r\n")
 	r = s.rec(1024)
 	print r
 
