@@ -11,7 +11,7 @@ try:
 	print r
 
 	s.send("PASS senha\r\n")
-	r = s.rec(1024)
+	r = s.recv(1024)
 	print r
 
 	s.send("QUIT\r\n")
