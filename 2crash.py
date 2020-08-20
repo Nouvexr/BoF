@@ -3,7 +3,7 @@ import socket
 bytes = "A" * valor pra chegar no EIP + "BBBB" + "C" * (valor total - valor pra chegar no EIP e EIP)
 try:
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.connect(("192.168.2.140",110))
+	s.connect(("host",port))
 	r = s.recv(1024)
 	print r
 
