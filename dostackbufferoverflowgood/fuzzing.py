@@ -8,7 +8,7 @@ pattern += "\n"
 try:
 	print "Done.".format(pattern)
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.connect(("192.168.2.130", 31337))
+	s.connect(("host", 31337))
 	s.send(pattern)
 	s.close
 except:
