@@ -8,7 +8,7 @@ while len(buffer) <= 1000:
 	contador=contador+200
 
 for string in buffer:
-	print "Fuzzing em PASS com %s bytes" %len(string)
+	print "Fuzzing em USER com %s bytes" %len(string)
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect(("host",21))
 	s.recv(1024)
